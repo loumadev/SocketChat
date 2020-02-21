@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+    <script src="/justlib.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="network">
+            <fieldset>
+                <legend>Network options:</legend>
+
+                <div class="margin"></div>
+                <div>IP address:</div>
+                <input type="text" class="ip">
+
+                <div class="margin"></div>
+
+                <div>Port:</div>
+                <input type="number" min="0" max="65535" value="3241" class="port">
+
+                <div class="margin"></div>
+
+                <button class="control">Connect</button>
+
+                <div class="margin"></div>
+
+                <div>Your name:</div>
+                <input type="text" class="nick" value="Client0">
+
+            </fieldset>
+            <div class="margin"></div>
+            <div>Status: <span class="status">Disconnected!</span></div>
+            <input type="checkbox"> Erase chat history
+        </section>
+        <section class="chat">
+            <fieldset>
+                <legend>Chat:</legend>
+                <div class="chat"></div>
+                <div class="margin"></div>
+                <div>
+                    <input type="text" class="textbox" placeholder="Type message..." disabled="true"> <button class="send">Send</button>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
